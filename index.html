@@ -15,6 +15,7 @@
     <!-- Manifest / PWA -->
     <link rel="manifest" href="/VitrineCar/manifest.json" />
       <meta name="theme-color" content="#ff4b2b" />
+      
 
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -102,5 +103,13 @@
             </nav>
         </footer>
 </body>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/VitrineCar/sw.js")
+    .then(() => console.log("SW registrado"))
+    .catch(err => console.error("Erro SW:", err));
+}
+</script>
 
 </html>
