@@ -1,0 +1,8 @@
+{
+  "name": "AutoCar",
+  "short_name": "AutoCar",
+  "start_url": "/meu-site-autocar/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff4b2b"
+}
