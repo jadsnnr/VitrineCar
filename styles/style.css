@@ -68,6 +68,21 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+#brand_name {
+  color: var(--brand-text-color);
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+.modal_dialog {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px rgba(21, 21, 21, 0.49);
+  padding: 1rem;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
 .brand_title {
   color: var(--brand-text-color);
 }
