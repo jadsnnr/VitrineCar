@@ -85,9 +85,7 @@ h2 {
 
 .modal_dialog > .return_icon {
   font-size: 1.8rem;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+  text-align: left;
 }
 
 .modal_dialog::backdrop {
