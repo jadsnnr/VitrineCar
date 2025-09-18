@@ -96,6 +96,14 @@ h2 {
   color: var(--brand-text-color);
 }
 
+.img_modal {
+  width: 95%;
+  border-radius: 15px;
+  box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.74);
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
 /*LINHA DIVISÓRIA*/
 hr {
   width: 90%;
