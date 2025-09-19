@@ -58,7 +58,6 @@ p {
 
 /*SESSÃO PRINCIPAL*/
 main {
-  text-align: center;
   padding-top: 1rem;
 }
 
@@ -66,6 +65,13 @@ main {
 h2 {
   color: var(--main-text-color);
   margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h3, h4, p {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 #brand_name {
@@ -84,8 +90,11 @@ h2 {
 }
 
 .modal_dialog > .return_icon {
-  font-size: 1.8rem;
   text-align: left;
+}
+
+ion-icon {
+  font-size: 1.8rem;
 }
 
 .modal_dialog::backdrop {
@@ -106,6 +115,11 @@ h2 {
   scroll-snap-type: both mandatory;
   scroll-padding: 1rem;
 }
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
 .img_modal {
   width: 95%;
   border-radius: 15px;
