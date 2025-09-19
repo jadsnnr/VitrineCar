@@ -128,6 +128,7 @@ ion-icon {
   padding: 1rem;
   scroll-snap-type: both mandatory;
   scroll-padding: 1rem;
+  justify-content: center;
 }
 
 .slider::-webkit-scrollbar {
