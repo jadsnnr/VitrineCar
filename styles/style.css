@@ -68,7 +68,9 @@ h2 {
   text-align: center;
 }
 
-h3, h4, p {
+h3,
+h4,
+p {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
   text-align: center;
@@ -95,6 +97,7 @@ h3, h4, p {
 
 ion-icon {
   font-size: 1.8rem;
+  text-align: left;
 }
 
 .modal_dialog::backdrop {
@@ -105,7 +108,7 @@ ion-icon {
   color: var(--brand-text-color);
 }
 
-.slider{
+.slider {
   display: grid;
   grid-template-columns: repeat(15, 80vw);
   grid-template-rows: 1fr;
