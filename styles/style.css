@@ -101,6 +101,7 @@ p {
 ion-icon {
   font-size: 1.8rem;
   text-align: left;
+  padding-left: 1rem;
 }
 
 .modal_dialog::backdrop {
