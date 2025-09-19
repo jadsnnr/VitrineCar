@@ -3,7 +3,7 @@ const modalButtons = document.querySelectorAll('.modal_button');
 const brandName    = document.getElementById('brand_name');
 const modelName    = document.getElementById('model');
 const returnIcon   = document.querySelector('.return_icon');
-const sliderSection= document.querySelector('.slider_section');
+const sliderSection= document.querySelector('.slider');
 
 modalButtons.forEach(btn => {
   btn.addEventListener('click', () => {
