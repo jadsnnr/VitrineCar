@@ -85,7 +85,7 @@ p{
 #brand_name {
   color: var(--brand-text-color);
   margin: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 #model {
   padding: 1rem;
@@ -119,16 +119,13 @@ ion-icon {
 }
 
 .slider {
-  display: grid;
-  grid-template-columns: repeat(15, 80vw);
-  grid-template-rows: 1fr;
+ display: flex;
   gap: 1rem;
-  overflow: scroll;
-  height: 50vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 30vh;
   padding: 1rem;
-  scroll-snap-type: both mandatory;
-  scroll-padding: 1rem;
-  justify-content: center;
+  scroll-snap-type: x mandatory;
 }
 
 .slider::-webkit-scrollbar {
@@ -136,11 +133,15 @@ ion-icon {
 }
 
 .img_modal {
-  width: 95%;
+  width: 75vw;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
   border-radius: 15px;
   box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.74);
   margin-top: 1rem;
   scroll-snap-align: center;
+
 }
 
 /*LINHA DIVISÓRIA*/
@@ -156,6 +157,7 @@ hr {
   gap: 1rem;
   padding: 0.8rem;
   margin-top: 1.7rem;
+  height: 100vh;
 }
 .modal_button{
   display: flex;
@@ -169,8 +171,8 @@ hr {
 }
 .grid_item_img {
   object-fit: cover;
-  object-position: 80% 100%;
-  width: 90%;
+  object-position: 60% 100%;
+  width: 100%;
   aspect-ratio: 1/1;
   border-radius: 15px;
   box-shadow: 1px 3px 5px rgba(58, 58, 58, 0.74);

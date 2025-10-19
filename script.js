@@ -23,11 +23,16 @@ modalButtons.forEach(btn => {
       let imgs = [];
       try { imgs = JSON.parse(imgsAttr); } catch { console.warn('data-imgs inválido'); }
       imgs.forEach(src => {
+        console.log("Carregando imagem:", src);
+        
         const img = document.createElement('img');
         img.src  = src;
         img.alt  = `${brandName.textContent} ${modelName.textContent}`;
         img.classList.add('img_modal');
         sliderSection.appendChild(img);
+
+        img.onerror = () => console.error("Erro ao carregar:", img.src);
+        img.onload = () => console.log("Imagem carregada:", img.src);
       });
     }
   });
